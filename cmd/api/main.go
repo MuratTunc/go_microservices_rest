@@ -31,5 +31,4 @@ func main() {
 		log.Println(err)
 		return
 	}
-	fmt.Printf("MICRO SERVICES IS STARTED!!! %s\n", port)
 }
