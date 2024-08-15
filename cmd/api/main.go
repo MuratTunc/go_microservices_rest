@@ -8,22 +8,23 @@ import (
 )
 
 const port = ":8083"
+const tmpl_page = "../../templates/home_page.html"
 
 func renderTemplate(w http.ResponseWriter, tmpl string) {
 	parsedTemplate, _ := template.ParseFiles(tmpl)
 	err := parsedTemplate.Execute(w, nil)
 	if err != nil {
-		fmt.Println("Error parsing template html page...")
+		log.Panic("Error parsing template html page...")
 		return
 	}
 }
 
 func main() {
 
-	fmt.Printf("MICRO SERVICES IS STARTED!!! %s\n", port)
+	fmt.Printf("MICRO SERVICES IS STARTED!!! AT LOCALHOST PORT %s\n", port)
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		renderTemplate(w, "../../templates/home_page.html")
+		renderTemplate(w, tmpl_page)
 	})
 
 	err := http.ListenAndServe(port, nil)
