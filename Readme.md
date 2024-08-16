@@ -1,4 +1,4 @@
-# BASIC MICROSERVICES VIA GOLANG
+# BASIC RESTFUL MICROSERVICE VIA GOLANG
 
 In this study, I will try to introduce the simplest web-based microservice using the Golang programming language. Intermediate level knowledge of Golang language will be sufficient.
 
@@ -25,7 +25,7 @@ The method is the type of request you send to the server. The four main resource
 
 
 ![restful_api.JPG](pictures/restful_api.JPG)
-
+_We are using just **GET** request in this microservice_
 
 ## VS CODE hierarchy of the project
 ![hierachy.JPG](pictures/VS_CODE_MAIN.JPG)
@@ -37,3 +37,8 @@ The method is the type of request you send to the server. The four main resource
 ## Github source code
 
 [github_source_code](https://github.com/MuratTunc/go_microservices_rest.git)
+
+
+In this project, we have created a very simple microservice in the Golang language using the Restful API. Our service only responds to get requests. Of course, the remaining rest requests can also be added to the code.
+
+__**I wish you good coding, thinking that it is educational and fun.**__
