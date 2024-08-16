@@ -34,6 +34,12 @@ _We are using just **GET** request in this microservice_
 ## Project directory tree
 ![hierachy.JPG](pictures/tree.JPG)
 
+## Start microservice
+![run_command.JPG](pictures/run_command.JPG)
+
+## Start web browser
+![run_command.JPG](pictures/web_browser.PNG)
+
 ## Github source code
 
 [github_source_code](https://github.com/MuratTunc/go_microservices_rest.git)
