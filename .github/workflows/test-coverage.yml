@@ -1,11 +1,5 @@
 name: go-test
-
-on:
-  pull_request:
-    branches: [ 'main']
-  workflow_dispatch:
-    branches: [ '**' ]
-
+on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -14,4 +8,5 @@ jobs:
       - run: echo "SECOND JOB"
       - run: echo "THIRD JOB"
       - name: Check out repository name
+        uses:actions/checkout@v2
       
